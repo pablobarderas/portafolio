@@ -1,0 +1,329 @@
+/*Fonts Google*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body{
+    background-color: #373B4D;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#logo{
+    border-radius: 12px;
+    height: 9rem;
+    width: 10rem;
+}
+
+#imgStarWars{
+    height: 30vw;
+    width: 42vw;
+}
+
+/* FLEX HEADER */
+
+.header{
+    background-color: #373B4D;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #754c97ce;
+    box-shadow: rgba(0, 0, 0, 0.384) 5px 6px 10px;
+}
+
+.itemHeader{
+    width: 60%;
+    margin: 1%;
+    /*border: #272a36 solid 3px;*/
+}
+
+.txtPablo{
+    font-size: 2rem;
+}
+
+
+/* Menú botones  TODO: HACER RESPONSIVE CON UL*/
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+
+.item{
+    height: 2rem;
+    padding: 5%;
+    margin: 2%;
+    text-align: center;
+    overflow: hidden;
+
+    border: #272a36 solid 3px;
+}
+
+.menu .item a{
+    position: relative;
+    font-size: 1.4rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: aliceblue;
+
+    border: #272a36 solid 3px;
+}
+
+/* Línea blanca */
+.menu .item a::before{
+    content: '';
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: rgba(255, 255, 255, 0.822) 3px solid;
+    transition: 0.3s;
+    
+}
+
+.menu .item a:hover::before{
+    overflow: hidden;
+    width: 100%;
+}
+
+.item:active{
+    transform:scale(1.1);
+}
+
+
+h1{
+    overflow: hidden;
+    color: white;
+    margin-left: 2%;
+    display: inline;
+    font-family: 'Source Code Pro', monospace;
+}
+
+hr{flex-wrap: wrap;
+    color: #272a36;
+}
+
+/* BOTÓN FLECHA PARA VOLVER AL INICIO */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  background-color: #272a36;
+  border-right: 3px solid #754c97;
+  border-bottom: 2px solid #754c97;
+  border-radius: 2rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  transition: all 300ms ease-out 2ms;
+  box-shadow: rgba(0, 0, 0, 0.384) 5px 6px 10px;
+}
+
+.material-symbols-outlined:hover{
+    background-color: #754c97;
+    
+    cursor: pointer;
+}
+
+.material-symbols-outlined:active{
+    transform:scale(1.1);
+}
+
+/* FORM CONTACTO */
+
+.txtContacto{
+    font-size: 2rem;
+    padding: 1%;
+    overflow: hidden;
+}
+
+.contacto{
+    text-align: center;
+    background-color: #272a36;
+    width: 70%;
+    margin: auto;
+    border: 3px solid #754c97;
+    border-radius: 20px;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    box-shadow: rgba(0, 0, 0, 0.384) 5px 6px 10px;
+    
+}
+
+form{
+   margin: auto;
+   padding-bottom: 3%;
+   width: 100%;
+   height: max-content;
+}
+
+form input{
+    width: 45%;
+    height: 30px;
+    margin: 1%;
+    background-color: #272a36;
+    color: white;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-bottom:none;
+    padding-left: 1%;
+    }
+
+form input:focus, form input:hover {
+    outline: none;
+    background-color: #373B4D;
+    color: white;
+    border-radius: 10px;
+}
+
+
+#btnEnviar{
+    padding: 1%;
+    width: 50%;
+    margin-top: 8%;
+    background-color: #373B4D;
+    color: white;
+    border-radius: 20px;
+    border: #754c97 solid 3px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.384) 5px 6px 10px;
+}
+
+#btnEnviar:hover{
+    color: white;
+    border-color: #f3f3f398;
+    background-color: #754c9786;
+    cursor: pointer;
+}
+
+#btnEnviar:active{
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: #272a36;
+    text-align: center;
+    padding: 1%;
+    border: 3px solid #754c97;
+    border-radius: 20px;
+}
+
+/* Section Projects */
+.proyects{
+    background-color: #272a36;
+    padding: 2%;
+    border-radius: 20px;
+    margin: 2%;
+    box-shadow: rgba(0, 0, 0, 0.384) 5px 6px 10px;
+}
+
+.txtProjects{
+    font-size: 2rem;
+    padding: 1%;
+}
+.txtStarWars{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.descriptionContainer{
+    display: flex;
+}
+
+.swItem{
+    width: 60%;
+    font-size: 1rem;
+}
+
+.sobreMi{
+    background-color: #272a36;
+    padding: 2%;
+    border-radius: 20px;
+    margin: 2%;
+    border-bottom: 3px solid #754c97;
+    border-right: 3px solid #754c97;
+    box-shadow: rgba(0, 0, 0, 0.384) 5px 6px 10px;
+}
+
+.txtSobreMi{
+    font-size: 2rem;
+    padding: 1%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+h2{
+    margin-top: 0;
+}
+
+/* FLEX SOBRE MI */
+.flexSobreMi{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.itemSobreMi{
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 20px;
+    background-color: #373B4D;
+    box-shadow: rgba(0, 0, 0, 0.384) 5px 6px 10px;
+}
+
+.itemSobreMi:hover{
+    transform: scale(1.01);
+    background-color: #272a369d;
+    box-shadow: rgba(0, 0, 0, 0.384) 5px 6px 10px;
+}
+
+
+.h3SobreMi{
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border-bottom: solid 3px #754c97;
+}
+
+.h3SobreMi:active{
+    border: none;
+}
+
+/* SOBRE MI DESPLEGABLE */
+.panel{
+    display: none;
+    background-color: #754c97;
+    border-radius: 25px;
+    padding: 2%; 
+    
+    transition: display 2s ease;
+}
+
+
+
+/* Media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
