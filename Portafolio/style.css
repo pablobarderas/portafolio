@@ -33,8 +33,10 @@ body{
 }
 
 .itemHeader{
+    min-width: min-content;
     width: 40%;
     margin: 1%;
+    min-height: min-content;
     /*border: #272a36 solid 3px;*/
 }
 
@@ -52,19 +54,17 @@ body{
     flex-wrap: wrap;
     height: 100%;
     margin: auto;
-
-    border: #272a36 3px solid;
 }
 
 
 .item{
+    min-height: min-content;
+    min-width: min-content;
     height: 2rem;
     padding: 5%;
     margin: 2%;
     text-align: center;
     overflow: hidden;
-
-    border: #272a36 solid 3px;
 }
 
 .menu .item a{
@@ -73,8 +73,6 @@ body{
     padding: 1rem;
     text-decoration: none;
     color: aliceblue;
-
-    border: #272a36 solid 3px;
 }
 
 /* Línea blanca */
