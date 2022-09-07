@@ -24,16 +24,16 @@ body{
     background-color: #373B4D;
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     border-radius: 10px;
     background-color: #754c97ce;
     box-shadow: rgba(0, 0, 0, 0.384) 5px 6px 10px;
 }
 
 .itemHeader{
-    width: 60%;
+    width: 40%;
     margin: 1%;
     /*border: #272a36 solid 3px;*/
 }
@@ -45,11 +45,15 @@ body{
 
 /* Menú botones  TODO: HACER RESPONSIVE CON UL*/
 .menu{
+    max-width: 100%;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     height: 100%;
+    margin: auto;
+
+    border: #272a36 3px solid;
 }
 
 
