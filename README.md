@@ -1,2 +1,2 @@
 # portafolio
-Portafolio personal desarrollador de aplicaciones multiplataforma
+Portafolio personal Desarrollador de Aplicaciones Multiplataforma POR HACER
